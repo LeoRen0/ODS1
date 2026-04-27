@@ -1,10 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Acerca de</title>
-    <link rel="stylesheet" href="estilos.css">
+<meta charset="UTF-8">
+<title>Acerca de - ODS 2</title>
+
+<style>
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: linear-gradient(to bottom, #fef9f4, #ffffff);
+    animation: fadeIn 1s ease;
+}
+
+/* ANIMACIÓN ENTRADA */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* NAV */
+nav {
+    background: #2e7d32;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcc80;
+}
+
+/* TÍTULO */
+h1 {
+    text-align: center;
+    color: #2e7d32;
+    margin-top: 30px;
+    animation: slideDown 1s ease;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* TARJETA */
+.card {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    animation: fadeIn 1.2s ease;
+}
+
+/* DESTACADOS */
+.highlight {
+    color: #ff5722;
+    font-weight: bold;
+}
+
+/* ICONOS VISUALES */
+.icons {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* BOTÓN */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #ff9800, #ff5722);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* EFECTO TEXTO */
+p {
+    line-height: 1.6;
+}
+</style>
 </head>
+
 <body>
 
 <nav>
@@ -14,11 +113,43 @@
     <a href="acerca.html">Acerca de</a>
 </nav>
 
-<h1>Acerca de</h1>
+<h1>Acerca de este proyecto</h1>
+
+<div class="icons">
+    🌍 🍽️ 🌱
+</div>
+
+<div class="card">
 
 <p>
-Este sitio web es un proyecto educativo creado con HTML, CSS y JavaScript
-para aprender sobre desarrollo web y temas globales como la hambruna.
+Este sitio web es un <span class="highlight">proyecto educativo interactivo</span> creado con HTML, CSS y JavaScript.
 </p>
+
+<p>
+El objetivo es aprender desarrollo web mientras se trabaja el tema del
+<span class="highlight">ODS 2: Hambre Cero</span>, enfocado en eliminar el hambre mundial.
+</p>
+
+<p>
+El proyecto integra elementos visuales como carruseles, animaciones, tarjetas informativas y efectos interactivos
+para mejorar la experiencia del usuario.
+</p>
+
+<p>
+También busca concienciar sobre la importancia de la <span class="highlight">alimentación sostenible</span>
+y la reducción del desperdicio de alimentos.
+</p>
+
+</div>
+
+<button onclick="cambiarMensaje(this)">Ver mensaje</button>
+
+<script>
+function cambiarMensaje(btn) {
+    btn.innerText = "🌍 El cambio empieza contigo";
+    btn.style.background = "green";
+}
+</script>
+
 </body>
 </html>
