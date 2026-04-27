@@ -1,10 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>ODS</title>
-    <link rel="stylesheet" href="estilos.css">
+<meta charset="UTF-8">
+<title>ODS - Hambre Cero</title>
+
+<style>
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: linear-gradient(to bottom, #fef9f4, #ffffff);
+    animation: fadeIn 1s ease;
+}
+
+/* ANIMACIÓN ENTRADA */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* NAV */
+nav {
+    background: #2e7d32;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcc80;
+}
+
+/* TITULOS */
+h1, h2 {
+    text-align: center;
+    color: #2e7d32;
+    animation: slideDown 0.8s ease;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* TEXTO */
+p {
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* TARJETAS SECCIÓN */
+section {
+    width: 85%;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* IMAGEN */
+.img-ods {
+    width: 100%;
+    border-radius: 15px;
+    margin: 15px 0;
+    transition: 0.3s;
+}
+
+.img-ods:hover {
+    transform: scale(1.02);
+}
+
+/* EFECTO DESTACADO */
+.highlight {
+    color: #ff5722;
+    font-weight: bold;
+}
+</style>
 </head>
+
 <body>
 
 <nav>
@@ -14,46 +95,30 @@
     <a href="acerca.html">Acerca de</a>
 </nav>
 
-<h1>ODS</h1>
+<h1>Objetivos de Desarrollo Sostenible</h1>
+
+<section>
 
 <p>
-Los ODS (Objetivos de Desarrollo Sostenible) son 17 metas globales creadas por la ONU.
+Los <span class="highlight">ODS</span> (Objetivos de Desarrollo Sostenible) son 17 metas globales creadas por la ONU
+para erradicar la pobreza, proteger el planeta y garantizar el bienestar de todas las personas.
 </p>
 
+<img src="https://th.bing.com/th/id/OIP.p3rfokyeB-vAXbl_31UYZwHaEK?pid=ImgDetMain"
+alt="ODS"
+class="img-ods">
+
 <h2>ODS 2: Hambre Cero</h2>
+
 <p>
-Busca eliminar el hambre y mejorar la seguridad alimentaria en todo el mundo.
+Este objetivo busca eliminar el hambre en el mundo, mejorar la nutrición y promover sistemas de producción de alimentos sostenibles.
 </p>
 
 <h2>La hambruna</h2>
+
 <p>
-La hambruna es una grave falta de alimentos que afecta a millones de personas y puede causar muerte y desnutrición.
+La hambruna es una situación extrema donde hay falta grave de alimentos, provocando desnutrición, enfermedades y muerte.
 </p>
-
-<section id="ods">
-
-    <h1>ODS (Objetivos de Desarrollo Sostenible)</h1>
-
-    <!-- IMAGEN AÑADIDA -->
-    <img src="https://th.bing.com/th/id/OIP.p3rfokyeB-vAXbl_31UYZwHaEK?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
-     alt="Objetivos de Desarrollo Sostenible"
-     class="img-ods">
-
-    <p>
-        Los ODS son 17 objetivos globales creados por la ONU para erradicar la pobreza,
-        proteger el planeta y garantizar bienestar para todos.
-    </p>
-
-    <h2>ODS 2: Hambre Cero</h2>
-    <p>
-        Busca eliminar el hambre, mejorar la nutrición y promover la agricultura sostenible.
-    </p>
-
-    <h2>La hambruna</h2>
-    <p>
-        La hambruna es una situación extrema de falta de alimentos que provoca desnutrición,
-        enfermedades y muertes.
-    </p>
 
 </section>
 
